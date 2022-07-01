@@ -1,0 +1,124 @@
+.featured {
+    height: 100vh;
+
+    &--vertical {
+        width: inherit;
+        height: inherit;
+        background: linear-gradient(to top, #111 10%, transparent 90%);
+    }
+
+    &--horizontal {
+        width: inherit;
+        height: inherit;
+        background: linear-gradient(to right, #111 30%, transparent 70%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: {
+            top: 4.375rem;
+            bottom: 9.375rem;
+            left: 2rem;
+        };
+    }
+
+    &--name {
+        font-size: 3.75rem;
+        font-weight: bold;
+    }
+
+    &--info {
+        font-size: 1.125rem;
+        font-weight: bold;
+        margin-top: 1rem;
+    }
+
+    &--points {
+        color: #46d369;
+    }
+
+    &--points,
+    &--year,
+    &--seasons {
+        display: inline-block;
+        margin-right: 1rem;
+    }
+
+    &--description {
+        margin-top: 1rem;
+        font-size: 1.25rem;
+        color: #999;
+        max-width: 40%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 10;
+        -webkit-box-orient: vertical;
+    }
+
+    &--buttons {
+        margin-top: 1rem;
+    }
+
+    &--watchbutton,
+    &--mylistbutton {
+        display: inline-block;
+        font-size: 1.25rem;
+        font-weight: bold;
+        padding: 0.75rem 1.5625rem;
+        border-radius: 5px;
+        text-decoration: none;
+        margin-right: 0.625rem;
+        opacity: 1;
+        transition: all ease 0.2s;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
+    &--watchbutton {
+        background: #fff;
+        color: #000;
+    }
+
+    &--mylistbutton {
+        background: #333;
+        color: #FFF;
+    }
+
+
+    &--genres {
+        margin-top: 1rem;
+        font-size: 1.125rem;
+        color: #999;
+    }
+}
+
+@media screen and (max-width: 48rem) {
+    .featured {
+        height: 90vh;
+
+        &--name {
+            font-size: 2.5rem;
+        }
+
+        &--info {
+            font-size: 1rem;
+        }
+
+        &--description {
+            font-size: 0.875rem;
+            max-width: 100%;
+            margin-right: 2rem;
+        }
+
+        &--watchbutton,
+        &--mylistbutton {
+            font-size: 1rem;
+        }
+
+        &--genres {
+            font-size: 0.875rem;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+header {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4.375rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 2rem;
+  background: transparent;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+header.black {
+  background: #141414;
+}
+
+header .header--logo {
+  height: 1.75rem;
+}
+
+header .header--logo img {
+  height: 100%;
+}
+
+header .header--user {
+  height: 2.25rem;
+}
+
+header .header--user img {
+  height: 100%;
+  border-radius: 3px;
+}
+/*# sourceMappingURL=Header.css.map */
